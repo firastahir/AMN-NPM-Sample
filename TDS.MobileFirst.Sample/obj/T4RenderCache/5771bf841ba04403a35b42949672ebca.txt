@@ -1,0 +1,102 @@
+//Revision: f3c243d6-df26-4572-8182-2438018d26df
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+namespace MobileFirst.Sample.Model.sitecore.templates.Feature
+{
+
+
+ 	/// <summary>
+	/// ISample Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Feature/Sample</para>	
+	/// <para>ID: 5771bf84-1ba0-4403-a35b-42949672ebca</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=ISampleConstants.TemplateIdString )] //, Cachable = true
+	public partial interface ISample : IGlassBase 
+	{
+			
+					/// <summary>
+					/// The Sample Text field.
+					/// <para></para>
+					/// <para>Field Type: Single-Line Text</para>		
+					/// <para>Field ID: 43fff124-d4db-48ab-aadb-5bc2d153d325</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(ISampleConstants.Sample_TextFieldName)]
+					string Sample_Text  {get; set;}
+			
+			
+	}
+
+
+	public static partial class ISampleConstants{
+
+			public const string TemplateIdString = "5771bf84-1ba0-4403-a35b-42949672ebca";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "Sample";
+
+		
+			
+			public static readonly ID Sample_TextFieldId = new ID("43fff124-d4db-48ab-aadb-5bc2d153d325");
+			public const string Sample_TextFieldName = "Sample Text";
+			
+			
+
+	}
+
+	
+	/// <summary>
+	/// Sample
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Feature/Sample</para>	
+	/// <para>ID: 5771bf84-1ba0-4403-a35b-42949672ebca</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=ISampleConstants.TemplateIdString)] //, Cachable = true
+	public partial class Sample  : GlassBase, ISample 
+	{
+	   
+		
+				/// <summary>
+				/// The Sample Text field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 43fff124-d4db-48ab-aadb-5bc2d153d325</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(ISampleConstants.Sample_TextFieldName)]
+				public virtual string Sample_Text  {get; set;}
+					
+			
+	}
+
+}
+

@@ -1,0 +1,59 @@
+----item----
+version: 1
+id: {BFDEED16-BB89-4DAE-8DC4-B804D5F0A6E0}
+database: master
+path: /sitecore/layout/Layouts/Feature/Sample/Sample Layout
+parent: {40ADD589-B3F8-4E35-9B23-7E5C3594F79B}
+name: Sample Layout
+master: {00000000-0000-0000-0000-000000000000}
+template: {3A45A723-64EE-4919-9D41-02FD40FD1466}
+templatekey: Layout
+created: 20180816T182813Z
+
+----field----
+field: {A036B2BC-BA04-44F6-A75F-BAE6CD242ABF}
+name: Path
+key: path
+content-length: 34
+
+/Views/Sample/Sample Layout.cshtml
+----version----
+language: en
+version: 1
+revision: 41c9f623-9fdc-4e7e-bdc7-ac560a3eb890
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180816T182813Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+41c9f623-9fdc-4e7e-bdc7-ac560a3eb890
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180816T182814Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

@@ -38,14 +38,14 @@ node {
    
    stage('Checkout') {
       checkout scm
-      sh "curl -O https://confluence.atlassian.com/kb/files/779355358/779355357/1/1441897666313/SSLPoke.class"
-	sh "cd $JAVA_HOME/jre/lib/security && chmod +x cacerts"
-sh "${jdk}/bin/keytool -noprompt -storepass changeit -trustcacerts -importcert -alias amerensubca -file ./amerensubca.crt -keystore $JAVA_HOME/jre/lib/security/cacerts"
-sh "${jdk}/bin/keytool -noprompt -storepass changeit -trustcacerts -importcert -alias amerenroot -file ./amerenroot.crt -keystore $JAVA_HOME/jre/lib/security/cacerts"
-sh "${jdk}/bin/keytool -noprompt -storepass changeit -trustcacerts -importcert -alias SH2v3Intermediate -file ./SH2v3Intermediate.cer -keystore $JAVA_HOME/jre/lib/security/cacerts"
+//      sh "curl -O https://confluence.atlassian.com/kb/files/779355358/779355357/1/1441897666313/SSLPoke.class"
+//	sh "cd $JAVA_HOME/jre/lib/security && chmod +x cacerts"
+//sh "${jdk}/bin/keytool -noprompt -storepass changeit -trustcacerts -importcert -alias amerensubca -file ./amerensubca.crt -keystore $JAVA_HOME/jre/lib/security/cacerts"
+//sh "${jdk}/bin/keytool -noprompt -storepass changeit -trustcacerts -importcert -alias amerenroot -file ./amerenroot.crt -keystore $JAVA_HOME/jre/lib/security/cacerts"
+//sh "${jdk}/bin/keytool -noprompt -storepass changeit -trustcacerts -importcert -alias SH2v3Intermediate -file ./SH2v3Intermediate.cer -keystore $JAVA_HOME/jre/lib/security/cacerts"
 
-sh "${jdk}/bin/keytool -noprompt -storepass changeit -trustcacerts -importcert -alias SH2v3Root -file ./SH2v3Root.cer -keystore $JAVA_HOME/jre/lib/security/cacerts"
-sh "${jdk}/bin/java SSLPoke artifactory.ameren.com 443"
+//sh "${jdk}/bin/keytool -noprompt -storepass changeit -trustcacerts -importcert -alias SH2v3Root -file ./SH2v3Root.cer -keystore $JAVA_HOME/jre/lib/security/cacerts"
+//sh "${jdk}/bin/java SSLPoke artifactory.ameren.com 443"
    }
    stage('NPM Set Up') {
    withNPM(npmrcConfig:'0bd01885-433e-4bb7-a26d-6f0c196ec5a6') {
